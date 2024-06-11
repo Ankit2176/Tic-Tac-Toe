@@ -39,6 +39,7 @@ const checkWin = () => {
 
             document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`
             document.querySelector(".line").style.width = "30vw";
+            gameover.play()
 
 
         }
