@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(67, 34, 98);
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px ;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+nav ul{
+    list-style-type:none;
+
+}
+.gamecontainer{
+background-color:white;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+
+}
+
+.Container{
+    display: grid;
+    grid-template-columns:repeat(3,10vw) ;
+    grid-template-rows: repeat(3,10vw);
+    font-family: "Roboto Mono", monospace;
+    position: relative;
+
+
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover
+{
+    background-color: rgba(0, 0, 255, 0.099);
+    cursor: pointer;
+}
+.info{
+        font-size: 25px;
+        font-family: cursive;
+}
+.gameinfo{
+    padding: 0 34px;
+    font-family: "Roboto Mono", monospace;
+}
+.infoset{
+    margin: 59px 0px -1px -450px;
+}
+.imgbox img {
+   width: 0;
+   margin: 119px 0px 0px -206px;
+   transition: width 1s ease-in-out;
+}
+
+
+
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#Reset{
+    margin: 0 23px;
+    padding: 3px 15px;
+    background-color: rgba(255, 118, 255, 0.377);
+    border-radius: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 3px 3px 10px rgb(122 122 122);
+    cursor: pointer;
+    
+}
+
+.line{
+    display: grid;
+    background-color: black;
+    height: 3px;
+    width: 0vw;
+    transition: width 1s ease-in-out;
+    position: absolute;
+}
+
+@media Screen and (max-width :600px) {
+    .gamecontainer{
+        flex-wrap: wrap;
+
+    }
+    .gameinfo{
+        margin: 31px 218px 0px -10px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    .Container{
+       
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 25vw);
+      
+    }
+    
+    .info{
+        font-size: 20px;
+        font-family: cursive;
+    }
+     
+    .box{
+        font-size: 70px;
+        
+    }
+  
+    .imgbox img {
+        margin: 88px 0px 0px -275px
+     }
+
+}
